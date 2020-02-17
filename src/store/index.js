@@ -37,5 +37,7 @@ export default new Vuex.Store({
   state,
   getters,
   actions,
-  mutations
+  mutations,
+  // 嚴格模式，禁止直接修改 state
+  strict: true
 });

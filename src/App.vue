@@ -12,10 +12,15 @@
                     <li>
                         <router-link :to="{name: 'list'}">list</router-link>
                     </li>
+                    <li>
+                        <router-link :to="{name: 'count'}">count</router-link>
+                    </li>
+                    <li>
+                        <router-link :to="{name: 'toDoList'}">toDoList</router-link>
+                    </li>
                 </ul>
             </div>
         </navbar>
-
         <router-view></router-view>
     </div>
 </template>
@@ -49,6 +54,9 @@
         }
         h2 {
             font-size: 24px;
+        }
+        .router-link-exact-active {
+            color: red;
         }
     }
 </style>
